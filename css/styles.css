@@ -13,7 +13,7 @@ body.ui {
 }
 
 #weather {
-  width: 500px;
+  width: 300px;
   margin: 0px auto;
   text-align: center;
   text-transform: uppercase;
@@ -22,7 +22,7 @@ body.ui {
 i {
   color: #fff;
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-size: 150px;
+  font-size: 75px;
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
