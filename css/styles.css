@@ -7,8 +7,12 @@ html {
 
 body.ui {
   padding: 45px 0;
-  font: 13px 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  
+  font-size: 1em;
+}
+h1{
+
+  font: 50px 'Titillium Web', sans-serif;
+  font-weight: 900;
   
 }
 
@@ -21,7 +25,7 @@ body.ui {
 
 i {
   color: #fff;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'Titillium Web', sans-serif;
   font-size: 75px;
   font-weight: normal;
   font-style: normal;
@@ -84,6 +88,8 @@ i {
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  font: 50px 'Titillium Web', sans-serif;
+  font-weight: 900;
 }
 
 #weather ul {
@@ -97,6 +103,8 @@ i {
   padding: 20px;
   display: inline-block;
   border-radius: 5px;
+  font: 1.25em 'Titillium Web', sans-serif;
+  font-weight: 200;
 }
 
 #weather .currently {
