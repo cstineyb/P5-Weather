@@ -20,6 +20,21 @@ $(document).ready(function() {
   });
 });*/
 
+//GET TIME
+  
+  var d = new Date();
+  var time = d.getHours();
+
+    console.log(time);
+
+ //SET BACKGROUND COLORS BASED ON TIME   
+
+  if ( time >= 5 && time <= 18 ){
+  $('#time').addClass('day');
+  }else {
+    $('#time').addClass('night');
+  }
+
 
 $.simpleWeather({
 
@@ -41,15 +56,15 @@ $.simpleWeather({
       // Get & store relative humidity
       var humid = weather.humidity;
 
+      var windchill = weather.wind.chill;
+
       //CREATE APPROXIMATE DEWPOINT CALCULATION
-      /**
+      /**     Td = T - ((100 - RH)/5.)
+              DEWPOINT = Temperature - ((100-Relative Humidity Percentage)/5.)
+              where Td is dew point temperature (in degrees Celsius), T is observed temperature (in degrees Celsius), and RH is relative humidity (in percent). Apparently this relationship is fairly accurate for relative humidity values above 50%
  
- Td = T - ((100 - RH)/5.)
-DEWPOINT = Temperature - ((100-Relative Humidity Percentage)/5.)
-where Td is dew point temperature (in degrees Celsius), T is observed temperature (in degrees Celsius), and RH is relative humidity (in percent). Apparently this relationship is fairly accurate for relative humidity values above 50%
- 
- **/
-      //dewpoin in celsius
+      **/
+      //dewpoint in celsius
       //var dewpoint = Math.ceil(temp - ((100-humid)/5));
 
       //dewpoint F
@@ -66,6 +81,8 @@ where Td is dew point temperature (in degrees Celsius), T is observed temperatur
        $('.thumb img').attr('src', thumb);
        //get and store humdity
        $('.humid').text(humid + " %");
+
+       $('.windchill').text(windchill + " F");
       
       
       // See console for _weather_ object
