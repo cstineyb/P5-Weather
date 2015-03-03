@@ -49,8 +49,11 @@ DEWPOINT = Temperature - ((100-Relative Humidity Percentage)/5.)
 where Td is dew point temperature (in degrees Celsius), T is observed temperature (in degrees Celsius), and RH is relative humidity (in percent). Apparently this relationship is fairly accurate for relative humidity values above 50%
  
  **/
-      var dewpoint = temp - ((100-humid)/5) - 5;
-      
+      //dewpoin in celsius
+      //var dewpoint = Math.ceil(temp - ((100-humid)/5));
+
+      //dewpoint F
+      var dewpoint = Math.ceil(temp - .36*(100-humid));
       console.log(dewpoint);
       
       // Output to hooks in HTML
