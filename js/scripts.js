@@ -39,18 +39,30 @@ $.simpleWeather({
       // Get & store thumb
       var thumb = weather.thumbnail;
       // Get & store relative humidity
+      var humid = weather.humidity;
 
+      //CREATE APPROXIMATE DEWPOINT CALCULATION
+      /**
+ 
+ Td = T - ((100 - RH)/5.)
+DEWPOINT = Temperature - ((100-Relative Humidity Percentage)/5.)
+where Td is dew point temperature (in degrees Celsius), T is observed temperature (in degrees Celsius), and RH is relative humidity (in percent). Apparently this relationship is fairly accurate for relative humidity values above 50%
+ 
+ **/
+      var dewpoint = temp - ((100-humid)/5) - 5;
       
-      console.log(thumb)
+      console.log(dewpoint);
       
       // Output to hooks in HTML
-      $('.temp').text(temp + "F");
+      $('.temp').text(temp + " F");
       $('.city').text(city);
       //OUTPUT STATE
       $('.state').text(state);
       
       //get and store thumbnail
        $('.thumb img').attr('src', thumb);
+       //get and store humdity
+       $('.humid').text(humid + " %");
       
       
       // See console for _weather_ object
