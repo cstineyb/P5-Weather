@@ -19,7 +19,13 @@ $(document).ready(function() {
     }
   });
 });*/
+//sticky
 
+$('.ui.sticky')
+  .sticky({
+    context: '#context'
+  })
+;
 //GET TIME
   
   var d = new Date();

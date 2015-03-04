@@ -21,8 +21,8 @@ h1{
   
 }
 
-img {-webkit-filter: grayscale(100%); 
-              filter: grayscale(100%);
+img {-webkit-filter: grayscale(30%); 
+              filter: grayscale(30%);
               filter: FlipH;
       -moz-transform: scaleX(-1); /* For Mozilla Firefox */
       -webkit-transform: scaleX(-1);
@@ -59,11 +59,11 @@ li {
 }
 
 .day {
-  background:#fff;
+  background:#DBECEC;
 }
 
 .night {
-  background: #000;
+  background: #00003D;
 }
 
 .icon-0:before { content: ":"; }
