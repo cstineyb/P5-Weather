@@ -17,9 +17,9 @@
   }
   if ( time >= 5 && time <= 18 ){
   
-  $('h1').addClass('dark');
+  $('h1, li, button').addClass('dark');
   }else {
-    $('h1').addClass('light');
+    $('h1, li, button').addClass('light');
   }
 
 
@@ -94,3 +94,7 @@ $.simpleWeather({
     }
   
   });
+
+//
+
+
