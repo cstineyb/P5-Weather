@@ -44,7 +44,6 @@ $.simpleWeather({
     
     // Get _weather_ object
     success: function(weather) {
-      
       // Get & store temperature
       var temp = weather.temp;
       // Get & store city
@@ -53,6 +52,8 @@ $.simpleWeather({
       var state = weather.region;
       // Get & store thumb
       var thumb = weather.thumbnail;
+
+      var bigImage = weather.image;
       // Get & store relative humidity
       var humid = weather.humidity;
 
@@ -70,17 +71,21 @@ $.simpleWeather({
       //dewpoint F
       var dewpoint = Math.ceil(temp - .36*(100-humid));
       console.log(dewpoint);
+     
       
       // Output to hooks in HTML
-      $('.temp').text(temp + " F");
-      $('.city').text(city);
+      $('.temp').prepend(temp);
+
+      //OUTPUT CITY, STATE
+      $('.city').text(city + ", " + state);
       //OUTPUT STATE
-      $('.state').text(state);
       
       //get and store thumbnail
        $('.thumb img').attr('src', thumb);
+       //get and store full size image
+        $('.bigImage img').attr('src', bigImage);
        //get and store humdity
-       $('.humid').text(humid + " %");
+       $('.humid').text(humid + "%");
 
        $('.windchill').text(windchill + " F");
       
