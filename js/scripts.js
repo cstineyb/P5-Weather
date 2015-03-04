@@ -1,31 +1,5 @@
 
 
-/*// Docs at http://simpleweatherjs.com
-$(document).ready(function() {
-  $.simpleWeather({
-    location: 'Spokane, WA',
-    woeid: '12799529',
-    unit: 'f',
-    success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-      html += '<li class="currently">'+weather.currently+'</li>';
-      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
-});*/
-//sticky
-
-$('.ui.sticky')
-  .sticky({
-    context: '#context'
-  })
-;
 //GET TIME
   
   var d = new Date();
@@ -36,9 +10,16 @@ $('.ui.sticky')
  //SET BACKGROUND COLORS BASED ON TIME   
 
   if ( time >= 5 && time <= 18 ){
+  
   $('#time').addClass('day');
   }else {
     $('#time').addClass('night');
+  }
+  if ( time >= 5 && time <= 18 ){
+  
+  $('h1').addClass('dark');
+  }else {
+    $('h1').addClass('light');
   }
 
 
@@ -50,16 +31,23 @@ $.simpleWeather({
     
     // Get _weather_ object
     success: function(weather) {
+
+    //PRIORITY BASIC WEATHER DATA  
       // Get & store temperature
       var temp = weather.temp;
       // Get & store city
       var city = weather.city;
        // Get & store state
       var state = weather.region;
-      // Get & store thumb
+      // Get & store image
+      var bigImage = weather.image;
+     
+
+     //SEONDARY ON_DEMAND "GEEK" WEATHER DATA   
+       // Get & store thumb
       var thumb = weather.thumbnail;
 
-      var bigImage = weather.image;
+   
       // Get & store relative humidity
       var humid = weather.humidity;
 
