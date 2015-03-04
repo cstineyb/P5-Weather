@@ -9,6 +9,7 @@ body {
   padding: 45px 0;
   font-size: 1em;
    background: #888;
+
 }
 h1{
 
@@ -21,21 +22,32 @@ h1{
 }
 
 img {-webkit-filter: grayscale(100%); 
-              filter: grayscale(100%); 
+              filter: grayscale(100%);
+              filter: FlipH;
+      -moz-transform: scaleX(-1); /* For Mozilla Firefox */
+      -webkit-transform: scaleX(-1);
+      position: absolute;
+      width:200px; 
+      top: -20px;
           }
 
 button {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 900;
+  background: #888;
+  width:100%;
+  color: #fff;
+  margin:5px;
+  padding:3px;
 
 
 }
 .bigImage {
   display:block;
-  margin: 0 auto;
+  margin: auto 0;
 }
 
-ul li {
+li {
   color: #666;
   display:inline;
   font-family: 'Titillium Web', sans-serif;
@@ -44,7 +56,6 @@ ul li {
   font-style: normal;
   line-height: 1.0;
   padding:5px;
-  margin-top: -20;
 }
 
 .day {
