@@ -24,6 +24,16 @@ img {-webkit-filter: grayscale(100%);
               filter: grayscale(100%); 
           }
 
+button {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+
+
+}
+.bigImage {
+  display:block;
+  margin: 0 auto;
+}
 
 ul li {
   color: #666;
@@ -33,6 +43,8 @@ ul li {
   font-size: 22px;
   font-style: normal;
   line-height: 1.0;
+  padding:5px;
+  margin-top: -20;
 }
 
 .day {

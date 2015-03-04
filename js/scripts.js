@@ -87,7 +87,7 @@ $.simpleWeather({
        //get and store humdity
        $('.humid').text(humid + "%");
 
-       $('.windchill').text(windchill + " F");
+       $('.windchill').prepend(windchill);
       
       
       // See console for _weather_ object
