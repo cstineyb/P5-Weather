@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  font-family: 'Titillium Web', sans-serif;
   padding: 5px;
   font-size: 1em;
    background: #888;
@@ -44,8 +45,8 @@ img {-webkit-filter: grayscale(40%);
       top: -20px;
           }
 
-button {
-  font-family: 'Titillium Web', sans-serif;
+button, .ui.button {
+  
   font-weight: 900;
   background: #888;
   width:100%;
@@ -56,7 +57,13 @@ button {
 
 
 }
-
+.geekData ul {
+  display:inline;
+}
+.geekData ul li {
+ font-weight: 400;
+  font-size: 1rem;
+}
 
 .bigImage {
   display:block;
