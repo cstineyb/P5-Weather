@@ -22,7 +22,7 @@
     $('h1, li, button').addClass('light');
   }
 
-
+//SPOKANE WEATHER
 $.simpleWeather({
 
     location: 'Spokane, WA',
@@ -66,6 +66,14 @@ $.simpleWeather({
       var dewpoint = Math.ceil(temp - .36*(100-humid));
       console.log(dewpoint);
      
+
+     //IF ELSE - FROST ALERT when temperature <32 && dewpoint > temperature activate warning MODAL
+
+     if ( temp <32 && dewpoint > temp ){
+  
+      $('.ui.modal').modal('show');
+      }
+
       
       // Output to hooks in HTML
       $('.temp').prepend(temp);
