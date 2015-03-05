@@ -17,9 +17,10 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  background: #888;
-
+  opacity: .8;
+  width: 80%;
 }
+
 
 .ui.input {
   padding-top:15px;
