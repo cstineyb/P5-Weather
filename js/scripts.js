@@ -67,7 +67,7 @@ $.simpleWeather({
       console.log(dewpoint);
      
 
-     //IF ELSE - FROST ALERT when temperature <32 && dewpoint > temperature activate warning MODAL
+     //USE DEWPOINT TO CREATE IF ELSE - FROST ALERT when temperature <32 && dewpoint > temperature activate warning MODAL
 
      if ( temp <32 && dewpoint > temp ){
   

@@ -12,7 +12,13 @@ body {
    width:100%;
 
 }
+.ui.modal {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #888;
 
+}
 
 .ui.input {
   padding-top:15px;
@@ -50,6 +56,8 @@ button {
 
 
 }
+
+
 .bigImage {
   display:block;
   margin: auto 0;
