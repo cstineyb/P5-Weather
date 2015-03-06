@@ -12,6 +12,7 @@ body {
    width:100%;
 
 }
+
 .ui.modal {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
@@ -24,6 +25,10 @@ body {
 .ui.input {
   padding-top:15px;
   
+}
+
+.ui.vertical.segment {
+  margin-top: 15px;
 }
 
 header {
@@ -70,7 +75,10 @@ button, .ui.button {
 
 
 }
+.place {
 
+  margin-top: 35px;
+}
 .geekData {
   padding: 10px;
 }
