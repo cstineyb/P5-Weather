@@ -116,7 +116,10 @@ li {
   color:#DBECEC;
 }
 
-
+.lefty {
+  
+  float:left;
+}
 /*MOBILE*/
 @media  (max-width: 767px) {
 

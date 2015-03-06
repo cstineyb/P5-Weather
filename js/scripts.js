@@ -22,6 +22,13 @@
     $('h1, li, button').addClass('light');
   }
 
+  //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
+if ( time <= 12  ){
+  
+  $('.bigImage').addClass('lefty');
+  }
+
+
 //SPOKANE WEATHER
 $.simpleWeather({
 
