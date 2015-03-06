@@ -78,12 +78,15 @@ button, .ui.button {
 .place {
 
   margin-top: 35px;
+
 }
-.geekData {
-  padding: 10px;
+div#geekspot.eight.wide {
+  display: none;
 }
+
 .geekData ul {
   display:inline;
+  padding: 10px;
 }
 .geekData ul li {
  font-weight: 400;
@@ -95,7 +98,11 @@ button, .ui.button {
   display:block;
   margin: auto 0;
 }
+.geekData.column li {
+  display: block;
 
+
+}
 li {
   color: #666;
   display:inline;

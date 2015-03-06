@@ -6,27 +6,27 @@
   var time = d.getHours();
 
     console.log(time);
+//CONDITIONALS
+     //SET BACKGROUND COLORS BASED ON TIME   
 
- //SET BACKGROUND COLORS BASED ON TIME   
+      if ( time >= 5 && time <= 18 ){
+      
+      $('#time').addClass('day');
+      }else {
+        $('#time').addClass('night');
+      }
+      if ( time >= 5 && time <= 18 ){
+      
+      $('h1, li, button').addClass('dark');
+      }else {
+        $('h1, li, button').addClass('light');
+      }
 
-  if ( time >= 5 && time <= 18 ){
-  
-  $('#time').addClass('day');
-  }else {
-    $('#time').addClass('night');
-  }
-  if ( time >= 5 && time <= 18 ){
-  
-  $('h1, li, button').addClass('dark');
-  }else {
-    $('h1, li, button').addClass('light');
-  }
-
-  //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
-if ( time <= 12  ){
-  
-  $('.bigImage').addClass('lefty');
-  }
+      //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
+       if ( time <= 12  ){
+        
+        $('.bigImage').addClass('lefty');
+        }
 
 
 //SPOKANE WEATHER
@@ -79,7 +79,7 @@ $.simpleWeather({
       var dewpoint = Math.ceil(temp - .36*(100-humid));
       console.log(dewpoint);
      
-
+ //CONDITIONALS BASED ON WEATHER DATA
      //USE DEWPOINT TO CREATE IF ELSE - FROST ALERT when temperature <32 && dewpoint > temperature activate warning MODAL
 
      if ( temp <32 && dewpoint > temp ){
@@ -106,7 +106,15 @@ $.simpleWeather({
         $('.wind').text(windData);
        $('.windchill').prepend(windchill);
       
-      
+    //TOGGLE FOR WEATHERGEEK "GEEK OUT" OPTION
+
+
+$(document).ready(function() {
+ $("#clickMe").click(function() {
+    $("#geekspot").toggle("slow");
+  });
+});
+
       // See console for _weather_ object
       console.log(weather);
     },
