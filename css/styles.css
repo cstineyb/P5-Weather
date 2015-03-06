@@ -115,3 +115,27 @@ li {
 .light {
   color:#DBECEC;
 }
+
+
+/*MOBILE*/
+@media  (max-width: 767px) {
+
+  
+    
+}
+
+
+
+/*TABLET*/
+@media  (min-width: 768px) {
+
+  
+}
+
+
+/*DESKTOP*/
+@media  (min-width: 992px) {
+
+  
+}
+
