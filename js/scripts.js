@@ -41,6 +41,8 @@ $.simpleWeather({
       var state = weather.region;
       // Get & store image
       var bigImage = weather.image;
+
+      var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
      
 
      //SEONDARY ON_DEMAND "GEEK" WEATHER DATA   
@@ -89,6 +91,7 @@ $.simpleWeather({
        //get and store humdity
        $('.humid').text(humid + "%");
 
+        $('.wind').text(windData);
        $('.windchill').prepend(windchill);
       
       

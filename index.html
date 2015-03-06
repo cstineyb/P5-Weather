@@ -2,13 +2,14 @@
 
 <html>
 <head>
-
+ 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
+  
   <title>What's up, WEATHERGEEK?</title>
-
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -24,25 +25,38 @@
   
 
     
-<div><h1 class="centered">WEATHERGEEK</h1></div>
-<article id = "time" class="ui five column centered grid">
-    <div class="column bigImage centered"><img src="" alt=""></div>
-      <div class="three column centered row">
-          <div class="row three wide">
+<header class= "centered">
+
+    <h1 class="centered">WEATHERGEEK</h1>
+
+</header>
+
+<article id = "time" class="ui eight column centered grid"> <!-- attach DAY/NIGHT here-->
+            <!--SPOKANE WEATHER GOES HERE  -->
+         <div class="four wide centered row">
           <ul>
-                <li class="temp">&#8457</li>
-                <li class="city"></li>
-                <li class="state"></li>
-          </ul>
+            <li class="city"></li>
+              <li class="state"></li>
+            </ul>
+          </div>
+          <div class="centered bigImage">
+            <img src="" alt="">
+          </div>
+        <div class="four wide centered row">
+          <div class="row four wide">
+            <ul>
+                  <li class="temp">&#8457</li>
+            </ul>
+            <ul>
+                  <li class="wind"></li>
+            </ul>
 
           <!-- MODAL FOR FROST ALERT -->
           <div class="ui modal">
-            
-              <div class="header">
+            <div class="header">
                FROST ALERT
               </div>
               <div class="content">
-                
                 <div class="description">
                   The temperature has fallen below the dewpoint. Watch for ice and frost.
                 </div>
@@ -53,40 +67,44 @@
               </div>
             </div>
 
-            <!-- PLACE FORECAST HERE -->
+          
       
          </div>
-
-         
-        <div id="geekspot" class="five column centered row">
+          <div class="six wide column centered">
           <button>Geek Out</button>
+          </div>
+        <div id="geekspot" class="five wide centered row">
+         
           <!-- GEEK CONTENT TO BE TOGGLED GOES HERE-->
-              <div class="geekData row five wide">
+              <div class="geekData column five wide">
               <ul>
-                    <li class="temp">wind</li>
-                    <li class="city">windchill</li>
-                    <li class="state">humidity</li>
-                    <li class="city">pressure</li>
-                    <li class="state">dewpoint</li>
-                    <li class="state">heat index</li>
-                    <li class="temp">wind</li>
-                    <li class="city">windchill</li>
-                    <li class="state">humidity</li>
-                    <li class="city">pressure</li>
-                    <li class="state">dewpoint</li>
-                    <li class="state">heat index</li>
+                    <li >windy</li>
+                    <li >windchill</li>
+                    <li >humidity</li>
+                    <li >pressure</li>
+                    <li >dewpoint</li>
+                    <li >heat index</li>
+                    <li >wind</li>
+                    <li >windchill</li>
+                    <li >humidity</li>
+                    <li >pressure</li>
+                    <li >dewpoint</li>
+                    <li >heat index</li>
               </ul>
               </div>
         </div>
         <!-- GET WEATHER   -->
         <div class="ui category search centered">
-    <div class="ui icon input">
-      <input class="prompt" type="text" placeholder="What's it doing in...?">
-      <i class="search icon"></i>
-    </div>
-    <div id="custom" class="custom"></div>
-  </div>
-      </div>
+          <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Find Weather by Zip">
+          <i class="search icon"></i>
+          </div>
+          <div class="custom">
+          <!-- attach weather search here -->
+
+          </div>
+        </div>
+        </div>
   </div>
 
 </article>

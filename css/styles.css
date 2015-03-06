@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: 'Titillium Web', sans-serif;
-  padding: 5px;
   font-size: 1em;
    background: #888;
    width:100%;
@@ -24,7 +23,15 @@ body {
 
 .ui.input {
   padding-top:15px;
-  line-height: .75rem;
+  
+}
+
+.ui.category.search {
+  font-size:1em;
+}
+
+header {
+  padding-top:15px;
 }
 h1{
 
@@ -34,6 +41,15 @@ h1{
   margin: 0 0;
   padding: 5px 10px;
   
+}
+
+.city, .state {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.wind {
+  font-weight: 400;
 }
 
 img {-webkit-filter: grayscale(40%); 
@@ -58,6 +74,10 @@ button, .ui.button {
 
 
 }
+
+.geekData {
+  padding: 10px;
+}
 .geekData ul {
   display:inline;
 }
@@ -67,6 +87,7 @@ button, .ui.button {
 }
 
 .bigImage {
+  text-align: center;
   display:block;
   margin: auto 0;
 }
@@ -98,6 +119,3 @@ li {
 .light {
   color:#DBECEC;
 }
-
-
-
