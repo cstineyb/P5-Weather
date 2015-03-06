@@ -42,6 +42,10 @@ $.simpleWeather({
       // Get & store image
       var bigImage = weather.image;
 
+      var currently = weather.currently;
+
+      console.log(currently);
+
       var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
      
 
@@ -82,7 +86,8 @@ $.simpleWeather({
 
       //OUTPUT CITY, STATE
       $('.city').text(city + ", " + state);
-      //OUTPUT STATE
+      //OUTPUT DESCRIPTION
+      $('.current').text(currently);
       
       //get and store thumbnail
        $('.thumb img').attr('src', thumb);
