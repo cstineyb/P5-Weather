@@ -114,6 +114,10 @@ li {
   padding:5px;
 }
 
+.wind {
+  margin: 10px, 0;
+}
+
 .day {
   background:#DBECEC;
 }
