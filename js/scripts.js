@@ -103,10 +103,10 @@ $.simpleWeather({
        //get and store full size image
         $('.bigImage img').attr('src', bigImage);
        //get and store humdity
-       $('.humid').text(humid + "%");
+       $('.humid').append(humid + "%");
 
         $('.wind').text(windData);
-       $('.windchill').prepend(windchill);
+       $('.windchill').text(" "+windchill);
       
     //TOGGLE FOR WEATHERGEEK "GEEK OUT" OPTION
 

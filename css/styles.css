@@ -11,6 +11,7 @@ body {
    background: #888;
    width:100%;
 
+
 }
 
 .ui.modal {
@@ -29,6 +30,7 @@ body {
 
 .ui.vertical.segment {
   margin-top: 15px;
+
 }
 
 .ui.category.search {
@@ -44,7 +46,7 @@ header {
 }
 h1{
 
-  font: 60px 'Titillium Web', sans-serif;
+  font: 72px 'Titillium Web', sans-serif;
   font-weight: 900;
   line-height: 60px;
   margin: 0 0;
@@ -80,7 +82,7 @@ button, .ui.button {
   line-height: 2em;
   margin:5px;
   padding:13px 3px;
-  border-radius:2px;
+  border-radius:3px;
 
 
 }
@@ -129,10 +131,12 @@ li.wind {
 
 .day {
   background:#DBECEC;
+  border-radius: 3px;
 }
 
 .night {
   background: #00003D;
+   border-radius: 3px;
 }
 
 .dark {
@@ -149,6 +153,9 @@ li.wind {
   float:left;
 }
 
+.pressure {
+  line-height: 1.33em;
+}
 /*MOBILE*/
 @media  (max-width: 767px) {
 
