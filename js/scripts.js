@@ -110,10 +110,13 @@ $.simpleWeather({
 
 
 $(document).ready(function() {
+  
  $("#clickMe").click(function() {
     $("#geekspot").toggle("slow");
   });
 });
+ //MOTION FOR "GEEK OUT" OPTION
+
 
       // See console for _weather_ object
       console.log(weather);
