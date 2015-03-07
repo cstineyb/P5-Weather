@@ -23,6 +23,8 @@
       }
 
       //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
+
+      //BEFORE  12noon
        if ( time <= 12  ){
         
         $('.bigImage').addClass('lefty');
