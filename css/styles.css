@@ -147,6 +147,10 @@ li {
 /*TABLET*/
 @media  (min-width: 768px) {
 
+div.ui.vertical.segment {
+  max-width: 600px;
+  margin:auto;
+}
   
 }
 
