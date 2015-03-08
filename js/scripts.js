@@ -84,6 +84,10 @@ $.simpleWeather({
       //dewpoint F
       var dewpoint = Math.ceil(temp - .36*(100-humid));
       console.log(dewpoint);
+
+      //temp difference
+
+      var diff = high - low;
      
  //CONDITIONALS BASED ON WEATHER DATA
      //USE DEWPOINT TO CREATE IF ELSE - FROST ALERT when temperature <32 && dewpoint > temperature activate warning MODAL
@@ -122,6 +126,8 @@ $.simpleWeather({
 
         $('.wind').text(windData);
        $('.windchill').text(" "+windchill);
+
+       $('span.diff').text(diff);
       
     //TOGGLE FOR WEATHERGEEK "GEEK OUT" OPTION
 
