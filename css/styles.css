@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   opacity: .8;
   width: 80%;
+
 }
 
 
@@ -59,8 +60,23 @@ h1{
   line-height: 36px;
 }
 
-.wind {
+.wind{
   font-weight: 400;
+  line-height: 2em;
+}
+
+.high, .low {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.25em;
+}
+
+.high {
+  text-decoration: overline;
+}
+
+.low {
+  text-decoration: underline;
 }
 
 img {-webkit-filter: grayscale(40%); 
@@ -129,9 +145,7 @@ li {
 
 }
 
-li.wind {
- line-height: 2em;
-}
+
 
 .day {
   background:#DBECEC;

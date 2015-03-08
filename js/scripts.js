@@ -121,10 +121,19 @@ $.simpleWeather({
        $('.thumb img').attr('src', thumb);
        //get and store full size image
         $('.bigImage img').attr('src', bigImage);
+        //get and store high and low temperatures
+
+        $('.high').append(high);
+
+        $('.low').append(low);
+
+        // get and store wind
+         $('.wind').text(windData);
+
        //get and store humdity
        $('.humid').append(humid + "%");
-
-        $('.wind').text(windData);
+       // get and store windchill
+       
        $('.windchill').text(" "+windchill);
 
        $('span.diff').text(diff);
