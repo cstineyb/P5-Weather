@@ -53,6 +53,10 @@ $.simpleWeather({
 
       var currently = weather.currently;
 
+      var low = weather.low;
+
+      var high= weather.high;
+
       console.log(currently);
 
       var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
@@ -88,9 +92,20 @@ $.simpleWeather({
   
       $('.ui.modal').modal('show');
       }
-
+//TEMPERATURE ALERT when high and low are more than 25 apart 
+      if ( low <= high+25 ){
+  
+      $('.ui.modal.difference').modal('show');
+      }
       
+  //WICKE HOT ALERT when high temp is 99 degrees or more. 
       // Output to hooks in HTML
+      if ( high>= 99 ){
+  
+      $('.ui.modal.hot-stuff').modal('show');
+      }
+
+
       $('.temp').prepend(temp);
 
       //OUTPUT CITY, STATE
