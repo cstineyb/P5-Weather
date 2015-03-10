@@ -96,13 +96,13 @@ $.simpleWeather({
   
       $('.ui.modal').modal('show');
       }
-//TEMPERATURE ALERT when high and low are more than 25 apart 
-      if ( low <= high+25 ){
+//TEMPERATURE ALERT when high and low are more than 25 degrees apart 
+      if ( diff >= 25 ){
   
       $('.ui.modal.difference').modal('show');
       }
       
-  //WICKE HOT ALERT when high temp is 99 degrees or more. 
+  //WICKED HOT ALERT when high temp is 99 degrees or more. 
       // Output to hooks in HTML
       if ( high>= 99 ){
   
