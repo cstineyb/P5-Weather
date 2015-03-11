@@ -24,11 +24,12 @@
 
       //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
 
-      //BEFORE  12noon
-       if ( time <= 12  ){
+      //BEFORE  11am
+       if ( time < 11  ){
         
         $('.bigImage').addClass('lefty');
         }
+
 
 
 //SPOKANE WEATHER
