@@ -42,7 +42,6 @@ $.simpleWeather({
     success: function(weather) {
 
     //PRIORITY BASIC WEATHER DATA 
-      var code = weather.code;
 
       var description = weather.description; 
       // Get & store temperature
@@ -72,7 +71,6 @@ $.simpleWeather({
 
       var miles = weather.units.distance;
 
-      console.log(code);
 
       console.log(currently);
 
