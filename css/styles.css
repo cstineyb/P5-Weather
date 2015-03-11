@@ -99,21 +99,26 @@ button, .ui.button {
   border-radius:3px;
 
 
+
 }
 .place {
 
   margin-top: 55px;
 
 }
-div#geekspot.eight.wide {
+div#geekspot.eight.wide, div#forecastSpot.eight.wide {
   display: none;
 }
 
-.geekData ul {
-  display:inline;
+.geekData ul, .forecastData ul {
   padding: 10px;
 }
-.geekData ul li {
+
+.forecastData ul {
+  position:relative;
+  left:50px;
+}
+.geekData ul li, .forecastData ul li {
  font-weight: 400;
   font-size: 1rem;
 width: 170px;
@@ -186,8 +191,10 @@ li {
   
 } 
     
+.forecastData ul {
+  position: relative;
+  left: 20px;
 }
-
 
 
 /*TABLET*/

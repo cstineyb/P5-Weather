@@ -72,8 +72,76 @@ $.simpleWeather({
 
       var miles = weather.units.distance;
 
+      //FORECAST WEATHER DATA
+       // Get & store day one date
 
+       var oneDate = weather.forecast[0].day +", "+weather.forecast[0].date;
+       console.log(oneDate);
+
+       // Get & store day one high
+       var oneDateHigh = weather.forecast[0].high;
+
+       // Get & store day one low
+       var oneDateLow = weather.forecast[0].low;
+         // Get & store day one thumb
+       var oneDateThumb = weather.forecast[0].thumbnail;
+//SUBSEQUENT DAYS
+  //TWO
+      var twoDate = weather.forecast[1].day +", "+weather.forecast[1].date;
+       console.log(twoDate);
+
+       // Get & store day one high
+       var twoDateHigh = weather.forecast[1].high;
+
+       // Get & store day one low
+       var twoDateLow = weather.forecast[1].low;
+         // Get & store day one thumb
+       var twoDateThumb = weather.forecast[1].thumbnail;
+   //THREE
+      var threeDate = weather.forecast[2].day +", "+weather.forecast[2].date;
+       console.log(threeDate);
+
+       // Get & store day one high
+       var threeDateHigh = weather.forecast[2].high;
+
+       // Get & store day one low
+       var threeDateLow = weather.forecast[2].low;
+         // Get & store day one thumb
+       var threeDateThumb = weather.forecast[2].thumbnail;
+
+    //FOUR
+      var fourDate = weather.forecast[3].day +", "+weather.forecast[3].date;
+       console.log(fourDate);
+
+       // Get & store day one high
+       var fourDateHigh = weather.forecast[3].high;
+
+       // Get & store day one low
+       var fourDateLow = weather.forecast[3].low;
+         // Get & store day one thumb
+       var fourDateThumb = weather.forecast[3].thumbnail;   
+    //FIVE
+      var fiveDate = weather.forecast[4].day +", "+weather.forecast[4].date;
+       console.log(fiveDate);
+
+       // Get & store day one high
+       var fiveDateHigh = weather.forecast[4].high;
+
+       // Get & store day one low
+       var fiveDateLow = weather.forecast[4].low;
+         // Get & store day one thumb
+       var fiveDateThumb = weather.forecast[4].thumbnail;      
+
+      
+     
+
+
+
+
+      console.log(oneDateThumb);
+      console.log(oneDateHigh);
       console.log(currently);
+       console.log(fourDateThumb, fiveDateThumb);
 
       var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
      
@@ -179,7 +247,24 @@ $(document).ready(function() {
         //OUTPUT updated
         $('.updated').append(updated);
 
-        
+
+//FORECAST TOGGLE
+    $("#forecast").click(function() {
+    $("#forecastSpot").toggle("slow");
+  });  
+
+  //FORECAST OUTPUT
+      //OUTPUT day one
+        $('.dayOne').text(oneDate);
+        $('.dayOneThumb').attr('src', oneDateThumb);
+        //OUTPUT day two
+        $('.dayTwo').append(sunset);
+        //OUTPUT day three
+       $('.dayThree').append(humid + "%");  
+       //OUTPUT day four
+       $('.dayFour').append(sunset);
+        //OUTPUT day five
+       $('.dayFive').append(humid + "%");  
         
       // See console for _weather_ object
       console.log(weather);
