@@ -41,7 +41,10 @@ $.simpleWeather({
     // Get _weather_ object
     success: function(weather) {
 
-    //PRIORITY BASIC WEATHER DATA  
+    //PRIORITY BASIC WEATHER DATA 
+      var code = weather.code;
+
+      var description = weather.description; 
       // Get & store temperature
       var temp = weather.temp;
       // Get & store city
@@ -50,12 +53,26 @@ $.simpleWeather({
       var state = weather.region;
       // Get & store image
       var bigImage = weather.image;
-
+    // Get & store current
       var currently = weather.currently;
-
+    // Get & store low temp
       var low = weather.low;
-
+    // Get & store high temp
       var high= weather.high;
+    // Get & store sunrise
+      var sunrise = weather.sunrise;
+    // Get & store sunset
+      var sunset = weather.sunset;
+    // Get & store barometric pressure
+      var pressure = weather.pressure;
+      // Get & store update
+      var updated = weather.updated;
+  // Get & store visibility
+      var visibility = weather.visibility;
+
+      var miles = weather.units.distance;
+
+      console.log(code);
 
       console.log(currently);
 
@@ -113,29 +130,26 @@ $.simpleWeather({
       $('.temp').prepend(temp);
 
       //OUTPUT CITY, STATE
+
+
       $('.city').text(city + ", " + state);
       //OUTPUT DESCRIPTION
       $('.current').text(currently);
       
-      //get and store thumbnail
-       $('.thumb img').attr('src', thumb);
-       //get and store full size image
+      //OUTPUT thumbnail
+       //$('.thumb img').attr('src', thumb);
+       //OUTPUT full size image
         $('.bigImage img').attr('src', bigImage);
-        //get and store high and low temperatures
+        //OUTPUT high and low temperatures
 
         $('.high').append(high);
 
         $('.low').append(low);
-
-        // get and store wind
+        //OUTPUT wind
          $('.wind').text(windData);
 
-       //get and store humdity
-       $('.humid').append(humid + "%");
-       // get and store windchill
-       
-       $('.windchill').text(" "+windchill);
-
+      
+      //OUTPUT difference in hi-lo temps
        $('span.diff').text(diff);
       
     //TOGGLE FOR WEATHERGEEK "GEEK OUT" OPTION
@@ -147,9 +161,27 @@ $(document).ready(function() {
     $("#geekspot").toggle("slow");
   });
 });
- //MOTION FOR "GEEK OUT" OPTION
+      // Geek out OUPUTs
+        //OUTPUT sunrise
+        $('.sunrise').append(sunrise);
+        //OUTPUT sunset
+        $('.sunset').append(sunset);
+        //OUTPUT humdity
+       $('.humid').append(humid + "%");
+        //OUTPUT dewpoint
+        $('.dewpoint').append(dewpoint);
+        //OUTPUT visibility
+        $('.visibility').append(visibility+" "+miles);
+        //OUTPUT windchill
+        $('.windchill').text(" "+windchill);
 
+        //OUTPUT pressure
+        $('.pressure').append(pressure);
+        //OUTPUT updated
+        $('.updated').append(updated);
 
+        
+        
       // See console for _weather_ object
       console.log(weather);
     },
