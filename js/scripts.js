@@ -41,6 +41,7 @@ $.simpleWeather({
     
     // Get _weather_ object
     success: function(weather) {
+ 
 
     //PRIORITY BASIC WEATHER DATA 
 
