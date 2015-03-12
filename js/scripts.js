@@ -73,6 +73,14 @@ $.simpleWeather({
 
       var miles = weather.units.distance;
 
+
+      //FORECAST ICON APPEARANCE SWITCHAROO, both sizes...
+
+      var imgLoc = 'img/icons/' + weather.code +'.png';
+
+      $('img').attr('src', imgLoc);
+
+
       //FORECAST WEATHER DATA
        // Get & store day one date
 
