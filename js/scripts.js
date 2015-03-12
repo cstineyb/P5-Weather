@@ -108,10 +108,10 @@ $.simpleWeather({
 
       // Get & store day one thumb
 
-       var oneDateThumb = weather.forecast[0].imgLocThumbOne;
+       var oneDateThumb = imgLocThumbOne;
 //SUBSEQUENT DAYS
   //TWO
-
+ //THUMBNAIL FUN!
       var imgLocThumbTwo = 'img/icons/thumbs/'+ weather.forecast[1].code +'.png';
 
       $('img').attr('src', imgLocThumbTwo);
@@ -120,47 +120,66 @@ $.simpleWeather({
       var twoDate = weather.forecast[1].day +", "+weather.forecast[1].date;
       
 
-       // Get & store day one high
+       // Get & store day two high
        var twoDateHigh = weather.forecast[1].high;
 
-       // Get & store day one low
+       // Get & store day two low
        var twoDateLow = weather.forecast[1].low;
-         // Get & store day one thumb
-       var twoDateThumb = weather.forecast[1].imgLocThumbTwo;
+         // Get & store day two thumb
+       var twoDateThumb = imgLocThumbTwo;
    //THREE
+       //THUMBNAIL FUN!
+
+      var imgLocThumbThree = 'img/icons/thumbs/'+ weather.forecast[2].code +'.png';
+
+      $('img').attr('src', imgLocThumbThree);
+
+
+
       var threeDate = weather.forecast[2].day +", "+weather.forecast[2].date;
      
 
-       // Get & store day one high
+       // Get & store day three high
        var threeDateHigh = weather.forecast[2].high;
 
-       // Get & store day one low
+       // Get & store day three low
        var threeDateLow = weather.forecast[2].low;
-         // Get & store day one thumb
-       var threeDateThumb = weather.forecast[2].imgLocThumb;
+         // Get & store day three thumb
+       var threeDateThumb = imgLocThumbThree;
 
     //FOUR
+
+
+     var imgLocThumbFour = 'img/icons/thumbs/'+ weather.forecast[3].code +'.png';
+
+      $('img').attr('src', imgLocThumbFour);
+
       var fourDate = weather.forecast[3].day +", "+weather.forecast[3].date;
       
 
-       // Get & store day one high
+       // Get & store day four high
        var fourDateHigh = weather.forecast[3].high;
 
-       // Get & store day one low
+       // Get & store day four low
        var fourDateLow = weather.forecast[3].low;
-         // Get & store day one thumb
-       var fourDateThumb = weather.forecast[3].imgLocThumb;   
+         // Get & store day four thumb
+       var fourDateThumb = imgLocThumbFour;   
     //FIVE
+
+     var imgLocThumbFive = 'img/icons/thumbs/'+ weather.forecast[4].code +'.png';
+
+      $('img').attr('src', imgLocThumbFive);
+
       var fiveDate = weather.forecast[4].day +", "+weather.forecast[4].date;
     
 
-       // Get & store day one high
+       // Get & store day five high
        var fiveDateHigh = weather.forecast[4].high;
 
-       // Get & store day one low
+       // Get & store day five low
        var fiveDateLow = weather.forecast[4].low;
-         // Get & store day one thumb
-       var fiveDateThumb = weather.forecast[4].imgLocThumb;      
+         // Get & store day five thumb
+       var fiveDateThumb = imgLocThumbFive;      
 
       
      
@@ -298,7 +317,7 @@ $(document).ready(function() {
 
         //OUTPUT day two
         $('.dayTwo').text(twoDate);
-        $('.dayTwoThumb').attr('src', imgLocThumbTwo);
+        $('.dayTwoThumb').attr('src', twoDateThumb);
          $('.dayTwoHigh').append(twoDateHigh);
          $('.dayTwoLow').append(twoDateLow);
 
