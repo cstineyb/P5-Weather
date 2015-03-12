@@ -53,6 +53,7 @@ h1{
   letter-spacing: 2px;
   margin: 0 0;
   padding: 15px 10px;
+  text-align: center;
   
 }
 
@@ -90,14 +91,14 @@ img {-webkit-filter: grayscale(10%);
       top: -20px;
           }
 
-button, .ui.button {
+button {
   
   font-weight: 700;
   background: #888;
   width:100%;
   color: #fff;
   line-height: 2em;
-  margin:5px;
+  margin:10px 0 0 0;
   padding:13px 3px;
   border-radius:3px;
 
@@ -190,10 +191,9 @@ li {
 
  h1{
 
-  font: 44px 'Titillium Web', sans-serif;
+  font: 48px 'Titillium Web', sans-serif;
   font-weight: 900;
   letter-spacing:0;
-  left:-5px;
   
 } 
     
@@ -203,7 +203,13 @@ li {
 }
 
 img.dayOneThumb {
-  padding-top: 10px;
+  padding-top: 5px;
+}
+
+.bigImage {
+  text-align: left;
+  display:block;
+  margin: auto 0;
 }
 
 /*TABLET*/
@@ -220,6 +226,8 @@ div.ui.vertical.segment {
 /*DESKTOP*/
 @media  (min-width: 992px) {
 
-  
+ article{
+    width: 100%;
+  }
 }
 
