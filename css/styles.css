@@ -25,6 +25,23 @@ body {
 
 }
 
+.ui.modal .actions {
+  background: #DBECEC;
+}
+
+.ui.modal>.header {
+  background: #DBECEC;
+  color:#00003D;
+  display: block;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  }
+
+.ui.modal>.content, .ui.button {
+  background: #00003D;
+  color: #DBECEC;
+}
+
 
 .ui.input {
   padding-top:15px;
