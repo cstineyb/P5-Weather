@@ -47,9 +47,10 @@ body {
 
 h1{
 
-  font: 72px 'Titillium Web', sans-serif;
+  font: 80px 'Titillium Web', sans-serif;
   font-weight: 900;
   line-height: 60px;
+  letter-spacing: 2px;
   margin: 0 0;
   padding: 15px 10px;
   
@@ -191,6 +192,8 @@ li {
 
   font: 44px 'Titillium Web', sans-serif;
   font-weight: 900;
+  letter-spacing:0;
+  left:-5px;
   
 } 
     
