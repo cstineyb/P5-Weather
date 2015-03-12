@@ -196,6 +196,9 @@ li {
   left: 20px;
 }
 
+img.dayOneThumb {
+  padding-top: 10px;
+}
 
 /*TABLET*/
 @media  (min-width: 768px) {

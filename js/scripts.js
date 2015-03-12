@@ -1,4 +1,4 @@
-
+//IF CONDITION CODE... else
 
 //GET TIME
   
@@ -111,7 +111,7 @@ $.simpleWeather({
 
     //FOUR
       var fourDate = weather.forecast[3].day +", "+weather.forecast[3].date;
-       console.log(fourDate);
+      
 
        // Get & store day one high
        var fourDateHigh = weather.forecast[3].high;
@@ -122,7 +122,7 @@ $.simpleWeather({
        var fourDateThumb = weather.forecast[3].thumbnail;   
     //FIVE
       var fiveDate = weather.forecast[4].day +", "+weather.forecast[4].date;
-       console.log(fiveDate);
+    
 
        // Get & store day one high
        var fiveDateHigh = weather.forecast[4].high;
@@ -142,6 +142,9 @@ $.simpleWeather({
       console.log(oneDateHigh);
       console.log(currently);
        console.log(fourDateThumb, fiveDateThumb);
+        console.log(fourDate);
+           console.log(fiveDate);
+           console.log(fiveDateHigh);
 
       var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
      
@@ -257,14 +260,36 @@ $(document).ready(function() {
       //OUTPUT day one
         $('.dayOne').text(oneDate);
         $('.dayOneThumb').attr('src', oneDateThumb);
+         $('.dayOneHigh').append(oneDateHigh);
+         $('.dayOneLow').append(oneDateLow);
+
         //OUTPUT day two
-        $('.dayTwo').append(sunset);
+        $('.dayTwo').text(twoDate);
+        $('.dayTwoThumb').attr('src', twoDateThumb);
+         $('.dayTwoHigh').append(twoDateHigh);
+         $('.dayTwoLow').append(twoDateLow);
+
+
         //OUTPUT day three
-       $('.dayThree').append(humid + "%");  
+       $('.dayThree').text(threeDate);
+        $('.dayThreeThumb').attr('src', threeDateThumb);
+         $('.dayThreeHigh').append(threeDateHigh);
+         $('.dayThreeLow').append(threeDateLow);
+
+
+
        //OUTPUT day four
-       $('.dayFour').append(sunset);
+       $('.dayFour').text(fourDate);
+        $('.dayFourThumb').attr('src', fourDateThumb);
+         $('.dayFourHigh').append(fourDateHigh);
+         $('.dayFourLow').append(fourDateLow);
+        
+
         //OUTPUT day five
-       $('.dayFive').append(humid + "%");  
+       $('.dayFive').text(fiveDate);
+        $('.dayFiveThumb').attr('src', fiveDateThumb);
+         $('.dayFiveHigh').append(fiveDateHigh);
+         $('.dayFiveLow').append(fiveDateLow); 
         
       // See console for _weather_ object
       console.log(weather);
@@ -276,8 +301,4 @@ $(document).ready(function() {
     }
   
   });
-
-//
-
-
 

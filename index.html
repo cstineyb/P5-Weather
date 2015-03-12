@@ -140,11 +140,11 @@
 
         </div>
         <div class="six wide centered column ">
-        <button id ="forecast" class="ui">FORECAST</button>
+        <button id ="forecast" class="ui">Forecast</button>
       </div>
       <div id="forecastSpot" class="eight wide centered stackable column grid">
          
-          <!-- GEEK CONTENT TO BE TOGGLED GOES HERE-->
+          <!-- FORECASE CONTENT TO BE TOGGLED GOES HERE-->
     
               <div class="forecastData ui six column centered row">
 
@@ -154,34 +154,62 @@
                     <img src="" style = width:100px  class="dayOneThumb">
                     <br>
                     <li class="dayOne"></li>
+                    <li class="dayOneHigh">&uarr;</li>
+                    <li class="dayOneLow">&darr;</li>
+                </ul>
+                <ul>
+                    <img src="" style = width:100px  class="dayTwoThumb">
                     <br>
-                    <li class="dayTwo">Sunset . . . . . </li>
-                     <br>
-                    <li class="dayThree">Humidity . . . . . . . . </li>
-                     <br>
-                    <li class="dayFour">Visibility . . . . . . . </li>
-                    
-                    <li class="dayFive">Barometric<br>Pressure . . . . . .  </li>
-                    
-                   
-                    </ul>
-                </div>
+                    <li class="dayTwo"></li>
+                    <li class="dayTwoHigh">&uarr;</li>
+                    <li class="dayTwoLow">&darr;</li>
+                </ul>
+                <ul>
+                    <img src="" style = width:100px  class="dayThreeThumb">
+                    <br>
+                    <li class="dayThree"></li>
+                    <li class="dayThreeHigh">&uarr;</li>
+                    <li class="dayThreeLow">&darr;</li>
+                </ul>
+                <ul>
+                    <img src="" style = width:100px  class="dayFourThumb">
+                    <br>
+                    <li class="dayFour"></li>
+                    <li class="dayFourHigh">&uarr;</li>
+                    <li class="dayFourLow">&darr;</li>
+                </ul>
+                <ul>
+                    <img src="" style = width:100px  class="dayFiveThumb">
+                    <br>
+                    <li class="dayFive"></li>
+                    <li class="dayFiveHigh">&uarr;</li>
+                    <li class="dayFiveLow">&darr;</li>
+                </ul>
+
+              </div>
                   
                    
              </div>
         <!-- GET WEATHER   -->
         
         </div>
-        <div class="ui category search centered">
+        <div class="ui category search centered six wide centered">
             
             <div class="ui icon input">
-              <input class="prompt" type="text" placeholder="City by Zipcode...">
+              <input class="prompt" type="text" id="zip" placeholder="City by Zipcode...">   
+              <button id="getWeather">Get Weather</button>
             </div>
-            
-            <div id="custom">
-            <!-- attach weather search here -->
-            
-            </div>
+            <div id="searchSpot" class="eight wide centered stackable column grid">
+         
+          <!-- GEEK CONTENT TO BE TOGGLED GOES HERE-->
+    
+              <div class="custom ui six column centered row">
+
+
+
+              
+              </div>
+          
         </div>
   </div>
 
