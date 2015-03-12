@@ -43,6 +43,14 @@ $.simpleWeather({
     success: function(weather) {
  
 
+ //FORECAST ICON APPEARANCE SWITCHAROO, both sizes...
+
+      var imgLoc = 'img/icons/'+ weather.code +'.png';
+
+      $('img').attr('src', imgLoc);
+
+      console.log(imgLoc);
+
     //PRIORITY BASIC WEATHER DATA 
 
       var description = weather.description; 
@@ -52,8 +60,11 @@ $.simpleWeather({
       var city = weather.city;
        // Get & store state
       var state = weather.region;
-      // Get & store image
-      var bigImage = weather.image;
+      // Get & store ibigimage
+      var bigImage = imgLoc;
+
+      //Get and store THUMB
+
     // Get & store current
       var currently = weather.currently;
     // Get & store low temp
@@ -74,30 +85,40 @@ $.simpleWeather({
       var miles = weather.units.distance;
 
 
-      //FORECAST ICON APPEARANCE SWITCHAROO, both sizes...
-
-      var imgLoc = 'img/icons/' + weather.code +'.png';
-
-      $('img').attr('src', imgLoc);
+     
 
 
       //FORECAST WEATHER DATA
        // Get & store day one date
 
        var oneDate = weather.forecast[0].day +", "+weather.forecast[0].date;
-       console.log(oneDate);
+      
 
        // Get & store day one high
        var oneDateHigh = weather.forecast[0].high;
 
        // Get & store day one low
        var oneDateLow = weather.forecast[0].low;
-         // Get & store day one thumb
-       var oneDateThumb = weather.forecast[0].thumbnail;
+
+       //THUMBNAIL FUN!
+         
+      var imgLocThumbOne = 'img/icons/thumbs/'+ weather.forecast[0].code +'.png';
+
+      $('img').attr('src', imgLocThumbOne);
+
+      // Get & store day one thumb
+
+       var oneDateThumb = weather.forecast[0].imgLocThumbOne;
 //SUBSEQUENT DAYS
   //TWO
+
+      var imgLocThumbTwo = 'img/icons/thumbs/'+ weather.forecast[1].code +'.png';
+
+      $('img').attr('src', imgLocThumbTwo);
+
+
       var twoDate = weather.forecast[1].day +", "+weather.forecast[1].date;
-       console.log(twoDate);
+      
 
        // Get & store day one high
        var twoDateHigh = weather.forecast[1].high;
@@ -105,10 +126,10 @@ $.simpleWeather({
        // Get & store day one low
        var twoDateLow = weather.forecast[1].low;
          // Get & store day one thumb
-       var twoDateThumb = weather.forecast[1].thumbnail;
+       var twoDateThumb = weather.forecast[1].imgLocThumbTwo;
    //THREE
       var threeDate = weather.forecast[2].day +", "+weather.forecast[2].date;
-       console.log(threeDate);
+     
 
        // Get & store day one high
        var threeDateHigh = weather.forecast[2].high;
@@ -116,7 +137,7 @@ $.simpleWeather({
        // Get & store day one low
        var threeDateLow = weather.forecast[2].low;
          // Get & store day one thumb
-       var threeDateThumb = weather.forecast[2].thumbnail;
+       var threeDateThumb = weather.forecast[2].imgLocThumb;
 
     //FOUR
       var fourDate = weather.forecast[3].day +", "+weather.forecast[3].date;
@@ -128,7 +149,7 @@ $.simpleWeather({
        // Get & store day one low
        var fourDateLow = weather.forecast[3].low;
          // Get & store day one thumb
-       var fourDateThumb = weather.forecast[3].thumbnail;   
+       var fourDateThumb = weather.forecast[3].imgLocThumb;   
     //FIVE
       var fiveDate = weather.forecast[4].day +", "+weather.forecast[4].date;
     
@@ -139,7 +160,7 @@ $.simpleWeather({
        // Get & store day one low
        var fiveDateLow = weather.forecast[4].low;
          // Get & store day one thumb
-       var fiveDateThumb = weather.forecast[4].thumbnail;      
+       var fiveDateThumb = weather.forecast[4].imgLocThumb;      
 
       
      
@@ -147,7 +168,7 @@ $.simpleWeather({
 
 
 
-      console.log(oneDateThumb);
+      /*console.log(oneDateThumb);
       console.log(oneDateHigh);
       console.log(currently);
        console.log(fourDateThumb, fiveDateThumb);
@@ -155,12 +176,15 @@ $.simpleWeather({
            console.log(fiveDate);
            console.log(fiveDateHigh);
 
+           */
+
       var windData = weather.wind.direction +" "+ weather.wind.speed + weather.units.speed;
      
 
      //SEONDARY ON_DEMAND "GEEK" WEATHER DATA   
        // Get & store thumb
       var thumb = weather.thumbnail;
+
 
    
       // Get & store relative humidity
@@ -274,7 +298,7 @@ $(document).ready(function() {
 
         //OUTPUT day two
         $('.dayTwo').text(twoDate);
-        $('.dayTwoThumb').attr('src', twoDateThumb);
+        $('.dayTwoThumb').attr('src', imgLocThumbTwo);
          $('.dayTwoHigh').append(twoDateHigh);
          $('.dayTwoLow').append(twoDateLow);
 

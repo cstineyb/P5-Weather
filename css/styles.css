@@ -104,9 +104,10 @@ img {-webkit-filter: grayscale(10%);
       -moz-transform: scaleX(-1); /* For Mozilla Firefox */
       -webkit-transform: scaleX(-1);
       position: absolute;
-      width:200px; 
-      top: -20px;
+      top: -30px;
           }
+
+
 
 button {
   
