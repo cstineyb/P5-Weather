@@ -73,6 +73,11 @@ h1{
   
 }
 
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+}
+
 .city, .state {
   font-size: 28px;
   line-height: 36px;
@@ -124,6 +129,9 @@ button {
 
 
 }
+
+
+
 .place {
 
   margin-top: 55px;
@@ -228,9 +236,24 @@ li {
 
 }
 
+button:hover, .ui.button:hover {
+  background-color: #777;
+
+}
+
 .favorites {
   margin-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
+}
+
+
+
+#weather1, #weather2, #weather3, #weather4  {
+  display:none;
+  border: solid 2px #00003D;
+  border-radius: 3px;
+  padding:10px;
+  background-color: #DBECEC;
 }
 
 /*MOBILE*/

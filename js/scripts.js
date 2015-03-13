@@ -360,37 +360,117 @@ $(document).ready(function() {
 //POP UP WEATHER FOR FAVORITE PLACES TO VISIT
 //HI WEATHER
 
-
-$('#hi').popup({
-    title   : 'Weather',
-    content : time
+$(function() {
+  $.simpleWeather({
+    location: 'Paia, HI',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2>'+weather.city+'</h2>';
+       html += '<p>weather.code: '+weather.code+'</p>';
+      html += '<p> '+weather.temp+weather.units.temp+'</p>';
+      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
+      
+      
+    $("#weather1").html(html);
+    },
+    error: function(error) {
+      $("#weather1").html('<p>'+error.message+'</p>');
+    }
   });
+});
+
+$("#hi").click(function() {
+    $("#weather1").slideToggle("slow");
+  
+});
+
+
+
+
+//GIRONA WEATHER
+$(function() {
+  $.simpleWeather({
+    location: 'Girona, Spain',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2>'+weather.city+'</h2>';
+       html += '<p>weather.code: '+weather.code+'</p>';
+      html += '<p> '+weather.temp+weather.units.temp+'</p>';
+      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
+      
+      
+    $("#weather2").html(html);
+    },
+    error: function(error) {
+      $("#weather2").html('<p>'+error.message+'</p>');
+    }
+  });
+});
+
+$("#spain").click(function() {
+    $("#weather2").slideToggle("slow");
+  
+});
+
 
 
 
 //BC WEATHER
 
-$('#bc').popup({
-    title   : 'Weath',
-    content : time
+$(function() {
+  $.simpleWeather({
+    location: 'Nakusp, B',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2>'+weather.city+'</h2>';
+       html += '<p>weather.code: '+weather.code+'</p>';
+      html += '<p> '+weather.temp+weather.units.temp+'</p>';
+      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
+      
+      
+    $("#weather3").html(html);
+    },
+    error: function(error) {
+      $("#weather3").html('<p>'+error.message+'</p>');
+    }
   });
+});
 
-
-
-//SPAIN WEATHER
-
-$('#spain').popup({
-    title   : 'Weath',
-    content : time
-  });
+$("#bc").click(function() {
+    $("#weather3").slideToggle("slow");
+  
+});
 
 
 
 //NZ WEATHER
-$('#nz').popup({
-    title   : 'Weath',
-    content : time
+$(function() {
+  $.simpleWeather({
+    location: 'Auckland, NZ',
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2>'+weather.city+'</h2>';
+       html += '<p>weather.code: '+weather.code+'</p>';
+      html += '<p> '+weather.temp+weather.units.temp+'</p>';
+      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
+      
+      
+    $("#weather4").html(html);
+    },
+    error: function(error) {
+      $("#weather4").html('<p>'+error.message+'</p>');
+    }
   });
+});
+
+$("#nz").click(function() {
+    $("#weather4").slideToggle("slow");
+  
+});
 
       
 
