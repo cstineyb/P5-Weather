@@ -345,13 +345,17 @@ $(document).ready(function() {
         
 
 //POP UP WEATHER FOR FAVORITE PLACES TO VISIT
-
-$('.ui.button.fave')
-  .popup({
-    title   : 'Weather',
+//HI WEATHER
+$('#hi').popup({
+    title   : 'Weath',
     content : time
-  })
-;
+  });
+//BC WEATHER
+
+//SPAIN WEATHER
+
+//NZ WEATHER
+
 
       // See console for _weather_ object
       console.log(weather);
