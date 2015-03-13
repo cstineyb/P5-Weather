@@ -65,7 +65,7 @@ h1{
 
   font: 80px 'Titillium Web', sans-serif;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 72px;
   letter-spacing: 2px;
   margin: 0 0;
   padding: 25px 10px;
@@ -286,14 +286,34 @@ img.dayOneThumb {
   padding-right: 0;
 }
 
+.button.fave {
+  width:60%;
+}
+.favorites {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
 }
 
 /*TABLET*/
 @media  (min-width: 768px) {
+  article{
+    width: 100%;
+  }
+  h1{
+
+  font: 78px 'Titillium Web', sans-serif;
+  font-weight: 900;
+  letter-spacing:1px;
+  
+} 
 
 div.ui.vertical.segment {
   max-width: 600px;
   margin:auto;
+}
+.button.fave {
+  width:50%;
 }
   
 }
