@@ -366,9 +366,9 @@ $(function() {
     unit: 'f',
     success: function(weather) {
       html = '<h2>'+weather.city+'</h2>';
-       html += '<p>weather.code: '+weather.code+'</p>';
+      html += '<p><img style= "position:relative;margin-top: 20px;margin-bottom: -20px;" src="img/icons/thumbs/'+weather.code+'.png"></p>';
       html += '<p> '+weather.temp+weather.units.temp+'</p>';
-      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p> '+weather.currently+'</p>';
       html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
       
       
@@ -395,9 +395,9 @@ $(function() {
     unit: 'f',
     success: function(weather) {
       html = '<h2>'+weather.city+'</h2>';
-       html += '<p>weather.code: '+weather.code+'</p>';
+       html += '<p><img style= "position:relative;margin-top: 20px;margin-bottom: -20px;" src="img/icons/thumbs/'+weather.code+'.png"></p>';
       html += '<p> '+weather.temp+weather.units.temp+'</p>';
-      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p> '+weather.currently+'</p>';
       html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
       
       
@@ -425,9 +425,9 @@ $(function() {
     unit: 'f',
     success: function(weather) {
       html = '<h2>'+weather.city+'</h2>';
-       html += '<p>weather.code: '+weather.code+'</p>';
+       html += '<p><img style= "position:relative;margin-top: 20px;margin-bottom: -20px;" src="img/icons/thumbs/'+weather.code+'.png"></p>';
       html += '<p> '+weather.temp+weather.units.temp+'</p>';
-      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p>'+weather.currently+'</p>';
       html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
       
       
@@ -453,11 +453,12 @@ $(function() {
     unit: 'f',
     success: function(weather) {
       html = '<h2>'+weather.city+'</h2>';
-       html += '<p>weather.code: '+weather.code+'</p>';
+      //try to calculate international weather code for demo
+       html += '<p><img style= "position:relative;margin-top: 20px;margin-bottom: -20px;" src="img/icons/thumbs/'+weather.code/100+'.png"></p>';
       html += '<p> '+weather.temp+weather.units.temp+'</p>';
-      html += '<p>weather.currently: '+weather.currently+'</p>';
+      html += '<p> '+weather.currently+'</p>';
       html += '<p>&uarr; '+weather.high+' '+'&darr;  '+weather.low+'</p>';
-      
+      console.log(weather.code);
       
     $("#weather4").html(html);
     },
