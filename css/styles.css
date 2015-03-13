@@ -1,6 +1,7 @@
 
 
 html {
+
   width: 100%;
   height: 100%;
  
@@ -37,16 +38,13 @@ body {
   font-weight: 600;
   }
 
-.ui.modal>.content, .ui.button {
+.ui.modal>.content,  {
   background: #00003D;
   color: #DBECEC;
 }
 
 
-.ui.input {
-  padding-top:15px;
-  
-}
+
 
 .ui.vertical.segment {
   margin-top: 15px;
@@ -57,9 +55,6 @@ body {
   padding: 40px 0 50px 5px;
 }
 
-.ui.icon.input {
-  padding-left: 5px;
-}
 
 
 h1{
@@ -82,11 +77,12 @@ h1{
 .wind{
   font-weight: 400;
   line-height: 2em;
+  font-style: italic;
 }
 
 .high, .low {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 900;
   line-height: 2.25em;
 }
 
@@ -138,6 +134,7 @@ div#geekspot.eight.wide, div#forecastSpot.eight.wide {
 }
 
 .forecastData ul {
+  width:170px;
   position:relative;
   left:50px;
 }
@@ -205,12 +202,27 @@ li {
   line-height: 1.33em;
 }
 
+
+.ui.button {
+  font-family:'Titillium Web', sans-serif;
+  font-weight: 700;
+  margin: 1em .25em 0 .25em;
+  background-color: #888;
+  color: #00003D;
+
+}
+
+.favorites {
+  margin-top: 50px;
+  padding-bottom: 60px;
+}
+
 /*MOBILE*/
 @media  (max-width: 767px) {
 
  h1{
 
-  font: 48px 'Titillium Web', sans-serif;
+  font: 46px 'Titillium Web', sans-serif;
   font-weight: 900;
   letter-spacing:0;
   
@@ -229,6 +241,12 @@ img.dayOneThumb {
   text-align: left;
   display:block;
   margin: auto 0;
+}
+.ui.grid>* {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 }
 
 /*TABLET*/

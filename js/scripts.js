@@ -343,6 +343,16 @@ $(document).ready(function() {
          $('.dayFiveHigh').append(fiveDateHigh);
          $('.dayFiveLow').append(fiveDateLow); 
         
+
+//POP UP WEATHER FOR FAVORITE PLACES TO VISIT
+
+$('.ui.button.fave')
+  .popup({
+    title   : 'Weather',
+    content : time
+  })
+;
+
       // See console for _weather_ object
       console.log(weather);
     },
