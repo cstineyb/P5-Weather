@@ -64,7 +64,7 @@ h1{
   line-height: 60px;
   letter-spacing: 2px;
   margin: 0 0;
-  padding: 15px 10px;
+  padding: 25px 10px;
   text-align: center;
   
 }
@@ -238,7 +238,7 @@ img.dayOneThumb {
 }
 
 .bigImage {
-  text-align: left;
+ 
   display:block;
   margin: auto 0;
 }
@@ -266,5 +266,8 @@ div.ui.vertical.segment {
  article{
     width: 100%;
   }
+
+
+  
 }
 

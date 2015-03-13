@@ -43,7 +43,7 @@ $.simpleWeather({
     success: function(weather) {
  
 
- //FORECAST ICON APPEARANCE SWITCHAROO, both sizes...
+ //FORECAST ICON APPEARANCE SWITCHAROO, 
 
       var imgLoc = 'img/icons/'+ weather.code +'.png';
 
@@ -63,7 +63,6 @@ $.simpleWeather({
       // Get & store ibigimage
       var bigImage = imgLoc;
 
-      //Get and store THUMB
 
     // Get & store current
       var currently = weather.currently;
@@ -350,12 +349,35 @@ $('#hi').popup({
     title   : 'Weath',
     content : time
   });
+
+
+
+
+
+
 //BC WEATHER
+
+$('#bc').popup({
+    title   : 'Weath',
+    content : time
+  });
+
+
 
 //SPAIN WEATHER
 
-//NZ WEATHER
+$('#spain').popup({
+    title   : 'Weath',
+    content : time
+  });
 
+
+
+//NZ WEATHER
+$('#nz').popup({
+    title   : 'Weath',
+    content : time
+  });
 
       // See console for _weather_ object
       console.log(weather);
