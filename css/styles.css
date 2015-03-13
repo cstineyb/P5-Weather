@@ -17,6 +17,10 @@ body {
 
 }
 
+article {
+  border-radius: 3px;
+}
+
 .ui.modal {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1rem;
@@ -176,13 +180,25 @@ li {
 
 .day {
   background:#DBECEC;
-  border-radius: 3px;
+ 
 }
 
 .night {
   background: #00003D;
-   border-radius: 3px;
+
 }
+
+.dawn  {
+  background: #476BB2;
+
+}
+
+
+.dusk  {
+   background: #2E004C
+}
+
+
 
 .dark {
   color: #00003D;

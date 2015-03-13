@@ -8,19 +8,24 @@
     console.log(time);
 //CONDITIONALS
      //SET BACKGROUND COLORS BASED ON TIME   
+//if (time < 10) {
+ //   greeting = "Good morning";
+//} else if (time < 20) {
+  //  greeting = "Good day";
+//} else {
+  //  greeting = "Good evening";
 
-      if ( time >= 5 && time <= 18 ){
+      if ( time >= 6 && time <= 17 ){
       
       $('#time').addClass('day');
-      }else {
-        $('#time').addClass('night');
-      }
-      if ( time >= 5 && time <= 18 ){
-      
       $('h1, li, button').addClass('dark');
       }else {
+        $('#time').addClass('night');
         $('h1, li, button').addClass('light');
       }
+
+
+
 
       //POSITION WEATHER IMAGE RELATIVE TO TIME OF DAY
 
@@ -357,12 +362,9 @@ $(document).ready(function() {
 
 
 $('#hi').popup({
-    title   : 'Weath',
+    title   : 'Weather',
     content : time
   });
-
-
-
 
 
 
