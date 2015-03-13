@@ -342,9 +342,20 @@ $(document).ready(function() {
          $('.dayFiveHigh').append(fiveDateHigh);
          $('.dayFiveLow').append(fiveDateLow); 
         
-
+// See console for _weather_ object
+      console.log(weather);
+    },
+  
+    // if error
+    error: function(error) {  
+      $('body').html('<p>' + error + '</p>');
+    }
+  
+  });
 //POP UP WEATHER FOR FAVORITE PLACES TO VISIT
 //HI WEATHER
+
+
 $('#hi').popup({
     title   : 'Weath',
     content : time
@@ -379,14 +390,5 @@ $('#nz').popup({
     content : time
   });
 
-      // See console for _weather_ object
-      console.log(weather);
-    },
-  
-    // if error
-    error: function(error) {  
-      $('body').html('<p>' + error + '</p>');
-    }
-  
-  });
+      
 
