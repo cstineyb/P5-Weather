@@ -1,3 +1,9 @@
+//WEATHER ICONS from Merlin the Red : http://merlinthered.deviantart.com/art/plain-weather-icons-157162192
+//SIMPLE WEATHER: http://simpleweatherjs.com/
+//SEMANTIC UI PLUGINS AT : http://semantic-ui.com
+
+
+
 //IF CONDITION CODE... else
 
 //GET TIME
